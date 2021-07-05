@@ -5,12 +5,26 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <main class="main-screen">
+      <div class="flip-card js-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="dragon.svg">
+          </div>
+          <div class="flip-card-back">
+            <h1>Dragon</h1>
+            <p>Fire attack: 1</p>
+            <p>Burn all shit.</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>

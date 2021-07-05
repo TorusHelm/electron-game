@@ -4,3 +4,17 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+document.addEventListener('DOMContentLoaded', function() {
+  cardHandle();
+});
+
+function cardHandle() {
+  let card = document.querySelector('.js-card');
+
+  if ( !card ) return;
+
+  card.addEventListener('click', function() {
+    this.classList.toggle('is-active');
+  });
+}
